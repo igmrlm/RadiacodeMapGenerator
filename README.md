@@ -3,7 +3,7 @@ This code uses the folium library to create a heatmap overlay of walking dose ra
 
 # Usage
 
-python heatmap_generator.py [input file name] [options]
+python MapGen.py [input file name] [options]
 # Options
 
 --zoom       Map zoom level (default: 15)
@@ -14,7 +14,7 @@ python heatmap_generator.py [input file name] [options]
 
 # Example
 
-python heatmap_generator.py data.txt --zoom 12 --blur 15 --opacity 0.05
+python MapGen.py track.rctrk --zoom 12 --blur 15 --opacity 0.05
 
 # Requirements
 folium
