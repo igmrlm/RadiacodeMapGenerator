@@ -14,7 +14,7 @@ python MapGen.py [input file name] [options]
 
 # Example
 
-python MapGen.py track.rctrk --zoom 12 --blur 15 --opacity 0.05
+python MapGen.py track.rctrk -z 12 -b 15 -o 0.05
 
 # Requirements
 folium
