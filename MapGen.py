@@ -4,13 +4,13 @@ import argparse
 from folium.plugins import HeatMap
 import webbrowser
 
-
 # Define argparse for options
 parser = argparse.ArgumentParser()
 parser.add_argument('file', type=str, help='Input file name')
-parser.add_argument('--zoom', type=int, help='Map zoom level', default=15)
-parser.add_argument('--blur', type=int, help='Heatmap blur level', default=20)
-parser.add_argument('--opacity', type=float, help='Heatmap opacity', default=0.01)
+parser.add_argument('-z', '--zoom', type=int, help='Map zoom level', default=15)
+parser.add_argument('-b', '--blur', type=int, help='Heatmap blur level', default=20)
+parser.add_argument('-o', '--opacity', type=float, help='Heatmap opacity', default=0.01)
+
 args = parser.parse_args()
 
 # Print out settings for run
