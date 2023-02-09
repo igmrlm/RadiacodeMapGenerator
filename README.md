@@ -3,9 +3,15 @@ This code uses the folium library to create a heatmap overlay of walking dose ra
 
 There are issues with this code.. It's making a heatmap based on the density of the points instead of the measured dose rate of those points and I'm not sure how to fix it yet.
 
+# DensityHeatMapGen.py 
+
+this file was my first attempt to create an interpolated map. It was a good learning experience but it is not generated a map based on doserate -- instead it's generating  based on measurement density, which in my opinion is basically useless for this specific use case of creating maps for a radiacode101.
+Currently it's generating the heatmap based on a concentration of points instead of doserate values, see more here if you want to learn about that:
+
+https://gis.stackexchange.com/questions/256/building-effective-heat-maps
 # Usage
 
-python MapGen.py [input file name] [options]
+python DensityHeatMapGen.py [input file name] [options]
 # Options
 
 -z, --zoom       Map zoom level (default: 15)
@@ -16,7 +22,7 @@ python MapGen.py [input file name] [options]
 
 # Example
 
-python MapGen.py track.rctrk -z 12 -b 15 -o 0.05
+python DensityHeatMapGen.py track.rctrk -z 12 -b 15 -o 0.05
 
 # Requirements
 folium
