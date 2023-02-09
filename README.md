@@ -2,9 +2,9 @@
 
 This code uses the folium library to create a heatmap overlay of walking dose rate data on an interactive map. The data is loaded from a .rctrk file and plotted on a map centered at the mean coordinates of the data points. The heatmap is customizable with options for blur, opacity, and visibility.
 
-There are issues with this code.. It's making a heatmap based on the density of the points instead of the measured dose rate of those points and I'm not sure how to fix it yet.
+There are issues with this code.. It's making a heatmap based on the density of the points instead of the measured dose rate of those points 
 
-this file was my first attempt to create an interpolated map. It was a good learning experience but it is not generated a map based on doserate -- instead it's generating  based on measurement density, which in my opinion is basically useless for this specific use case of creating maps for a radiacode101.
+This file was my first attempt to create an interpolated map. It was a good learning experience but it is not generated a map based on doserate -- instead it's generating  based on measurement density, which in my opinion is basically useless for this specific use case of creating maps for a radiacode101.
 Currently it's generating the heatmap based on a concentration of points instead of doserate values, see more here if you want to learn about that:
 
 https://gis.stackexchange.com/questions/256/building-effective-heat-maps
