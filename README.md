@@ -1,6 +1,8 @@
 # RadiacodeMapGenerator
 This code uses the folium library to create a heatmap overlay of walking dose rate data on an interactive map. The data is loaded from a .rctrk file and plotted on a map centered at the mean coordinates of the data points. The heatmap is customizable with options for blur, opacity, and visibility.
 
+There are issues with this code.. It's making a heatmap based on the density of the points instead of the measured dose rate of those points and I'm not sure how to fix it yet.
+
 # Usage
 
 python MapGen.py [input file name] [options]
