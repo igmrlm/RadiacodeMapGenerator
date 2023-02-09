@@ -34,9 +34,9 @@ python MapGen.py track.rctrk -s
 
 This will plot the data in track.rctrk and save it as `map.png` in the working directory.
 
-python MapGen.py data.csv -g 1000 -c viridis -f 10 -d 300 -v
+python MapGen.py track.rctrk -g 1000 -c viridis -f 10 -d 300 -v
 
-This will plot the data in data.csv, with grid size 1000, colormap type 'viridis', font size 10, dpi 300 and display the plot on screen.
+This will plot the data in track.rctrk, with grid size 1000, colormap type 'viridis', font size 10, dpi 300 and display the plot on screen.
 
 
 
