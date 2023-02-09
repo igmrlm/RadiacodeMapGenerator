@@ -1,3 +1,45 @@
+# MapGen.py
+
+MapGen is a simple Python script that plots data from a radiacode101 track file with the ability to adjust several display and output options.
+
+## Requirements
+* Python 3
+* pandas
+* numpy
+* matplotlib
+
+## Usage
+
+python MapGen.py [file] [-a] [-m] [-g [grid_size]] [-c [cmap]] [-d [dpi]] [-v] [-s] [-f [font_size]]
+
+
+## Options
+* `file`: Input file name (required)
+* `-a`/`--annotations`: Enables plot annotations
+* `-m`/`--marker`: Disables the circular marker
+* `-g`/`--grid_size`: Grid size (default: 500)
+* `-c`/`--cmap`: Colormap type (default: 'jet')
+* `-d`/`--dpi`: dpi of the saved image (default: 500)
+* `-v`/`--view`: Enables plot.show()
+* `-s`/`--save`: Enables plot.savefig()
+* `-f`/`--font_size`: Annotation font size (default: 8)
+
+## Examples
+
+python MapGen.py track.rctrk -a -m -v
+
+This will plot the data in track.rctrk, with annotations enabled and markers disabled, and display it on the screen.
+
+python MapGen.py track.rctrk -s
+
+This will plot the data in track.rctrk and save it as `map.png` in the working directory.
+
+python MapGen.py data.csv -g 1000 -c viridis -f 10 -d 300 -v
+
+This will plot the data in data.csv, with grid size 1000, colormap type 'viridis', font size 10, dpi 300 and display the plot on screen.
+
+
+
 # DensityHeatMapGen.py 
 
 This code uses the folium library to create a heatmap overlay of walking dose rate data on an interactive map. The data is loaded from a .rctrk file and plotted on a map centered at the mean coordinates of the data points. The heatmap is customizable with options for blur, opacity, and visibility.
