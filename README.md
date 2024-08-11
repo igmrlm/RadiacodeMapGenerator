@@ -1,3 +1,8 @@
+# NewMapGen.py
+
+python generate_heatmap.py <data_input_file> [--no-points] [--scale-factor <value>] [--no-normalization]
+
+
 # MapGen.py
 
 MapGen is a simple Python script that plots data from a radiacode101 track file with the ability to adjust several display and output options.
