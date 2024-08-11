@@ -1,6 +1,6 @@
 # NewMapGen.py
 
-python generate_heatmap.py <data_input_file> [--no-points] [--scale-factor <value>] [--no-normalization]
+python NewMapGen.py <data_input_file> [--no-points] [--scale-factor <value>] [--no-normalization]
 
 
 # MapGen.py
